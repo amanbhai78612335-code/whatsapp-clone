@@ -2,7 +2,8 @@
   "name": "whatsapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://amanbhai78612335-code.github.io/whatsapp-clone",
+  "homepage":
+  "https://amanbhai78612335-code.github.io/whatsapp-clone",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
