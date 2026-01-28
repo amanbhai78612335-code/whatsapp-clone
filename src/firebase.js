@@ -1,30 +1,21 @@
-import firebase from "firebase/app";
-import "firebase/auth";
-import "firebase/firestore";
-// const firebaseConfig = {
-//     apiKey: "AIzaSyB13PntUEDMkFbTt2psiHOZtQih83qrf88",
-//     authDomain: "whatsapp-clone-fafc9.firebaseapp.com",
-//     databaseURL: "https://whatsapp-clone-fafc9.firebaseio.com",
-//     projectId: "whatsapp-clone-fafc9",
-//     storageBucket: "whatsapp-clone-fafc9.appspot.com",
-//     messagingSenderId: "1027981883218",
-//     appId: "1:1027981883218:web:f62f32ffe8e5701f0f2c8b",
-//     measurementId: "G-0YMF5ZZL8N"
-//   };
-const firebaseConfig = {
-  apiKey: "AIzaSyD3c-g9buyeJnYZ-6_1NDZ8TQz1n4fhKn4",
-  authDomain: "whatsapp-73989.firebaseapp.com",
-  databaseURL: "https://whatsapp-73989.firebaseio.com",
-  projectId: "whatsapp-73989",
-  storageBucket: "whatsapp-73989.appspot.com",
-  messagingSenderId: "166827944927",
-  appId: "1:166827944927:web:28451dca14499bc919326a",
-  measurementId: "G-E7CXYXDVYG",
-};
-const firebaseApp = firebase.initializeApp(firebaseConfig);
-const db = firebaseApp.firestore();
-const auth = firebase.auth();
-const provider = new firebase.auth.GoogleAuthProvider();
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-export { auth, provider };
-export default db;
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyA_2AFakmMxgZrf-ed5J_6C98txytoHE2I",
+  authDomain: "my-what-s-app-ee44f.firebaseapp.com",
+  projectId: "my-what-s-app-ee44f",
+  storageBucket: "my-what-s-app-ee44f.firebasestorage.app",
+  messagingSenderId: "286527640123",
+  appId: "1:286527640123:web:0e4ed85f7172fa1032021e",
+  measurementId: "G-R0YRNYR098"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
